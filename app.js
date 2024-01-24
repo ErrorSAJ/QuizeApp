@@ -18,8 +18,6 @@ function displaydatas(data) {
     let allOptionsArr = allOptions.split(",");
 
     shuffleArr(allOptionsArr);
-    console.log(correcOption);
-    console.log(diffeculty);
     solvetime();
     diffecult(diffeculty);
 
