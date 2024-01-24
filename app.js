@@ -9,7 +9,6 @@ let WrongMsg = document.querySelector('.AtWrong');
 
 
 function displaydatas(data) {
-    console.log(data)
     let mcqQuestion = data.results[0].question;
     let wrongOption = data.results[0].incorrect_answers;
     let correcOption = data.results[0].correct_answer;
@@ -111,7 +110,6 @@ function diffecult(dif) {
 async function apifetched() {
     let respons = await fetch('https://opentdb.com/api.php?amount=1&category=9&type=multiple')
     let data = await respons.json()
-    // console.log(data)
     displaydatas(data);
 }
 apifetched();
